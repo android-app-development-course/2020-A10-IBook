@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="book" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <mapping class="com.example.ceproject1.db.BookCatalogue"></mapping>
+        <mapping class="com.example.ceproject1.db.BookList"></mapping>
+        <mapping class="com.example.ceproject1.db.BookMarks"></mapping>
+        <mapping class="com.example.ceproject1.db.UserBean"></mapping>
+    </list>
+</litepal>

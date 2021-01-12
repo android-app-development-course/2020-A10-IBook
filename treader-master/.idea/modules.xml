@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/treader-master.iml" filepath="$PROJECT_DIR$/treader-master.iml" group="treader-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/treader-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/treader-master.app.iml" group="treader-master/app" />
+    </modules>
+  </component>
+</project>

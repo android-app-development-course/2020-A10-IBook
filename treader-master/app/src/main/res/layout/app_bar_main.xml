@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.ceproject1.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bookshelf_header_bg"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:id="@+id/reBack"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/meune"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_menu_white_24dp" />
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.ceproject1.view.DragGridView
+        android:id="@+id/bookShelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="90.0dip"
+        android:fadingEdge="none"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:paddingBottom="30dp"
+        android:scrollbars="none"
+        android:verticalSpacing="3dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/select_file"
+        app:backgroundTint="@color/halfColorPrimary"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:pressedTranslationZ="0dp"
+
+        app:rippleColor="?attr/colorPrimary" />
+
+</android.support.design.widget.CoordinatorLayout>
